@@ -1,0 +1,67 @@
+@import url("fonts/fonts.css");
+@import url("styles/circles.css");
+@import url("styles/header.css");
+@import url("styles/main.css");
+@import url("styles/footer.css");
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #0E1014;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .body {
+    min-height: calc(100vh - 17px);
+  }
+  .page{
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page{
+    width: 100%
+  }
+}
+
+.right {
+  text-align: right;
+  justify-content: right;
+}
+
+@media screen and (max-width: 500px){
+  .body {
+    min-height: 0;
+  }
+
+  .none-less-500 {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: collapse;
+  }
+
+  .right {
+    text-align: left;
+    justify-content: left;
+  }
+}

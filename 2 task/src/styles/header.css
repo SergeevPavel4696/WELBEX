@@ -1,0 +1,117 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  height: 135px;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 58px;
+  margin: 57px 0 0 150px;
+  padding: 0;
+}
+
+.logo-image {
+  position: relative;
+  justify-items: left;
+  width: 140px;
+  height: 24px;
+}
+
+.logo-text {
+  position: relative;
+  width: 165px;
+  height: 24px;
+  font-family: 'Montserrat', serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.2;
+  font-style: normal;
+  color: #E4E5EA;
+}
+
+.important {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: 19px;
+  gap: 30px;
+  margin: 61px 0 0;
+  padding: 0 calc(1440px - 150px - 165px - 500px - 302px - 150px - 2 * 27px) 0 0;
+  box-sizing: border-box;
+}
+
+.important-link {
+  position: relative;
+  height: 19px;
+  font-family: 'Inter', serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.2;
+  color: #E4E5EA;
+  text-decoration: none;
+}
+
+.contacts {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 19px;
+  gap: 32px;
+  margin: 61px 150px 0 0;
+  padding: 0;
+}
+
+.contacts-link {
+  position: relative;
+  height: 19px;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.2;
+  color: #E4E5EA;
+  text-decoration: none;
+}
+
+.contacts-link-phone {
+  padding-right: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    min-width: 300px;
+    height: 55px;
+    background: #0E1014;
+    z-index: 5;
+  }
+
+  .important {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 15px;
+    gap: 16px;
+    margin: 20px auto 0;
+    padding: 0;
+    width: 288px;
+    box-sizing: border-box;
+    height: 15px;
+  }
+
+  .important-link {
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}
